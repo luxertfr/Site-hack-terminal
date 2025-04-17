@@ -1,0 +1,78 @@
+body{
+  background: #000000;
+  color: #33ff33;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.terminal {
+  border: 2px solid #33ff33;
+  box-shadow: 0px 0px 20px #33ff33;
+  border-radius: 10px;
+  width: 50vw;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.terminal .inputLine {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+.terminal span{
+  margin-right: auto;
+}
+
+#output p{
+  color: #28d528;
+  font-size: 15px;
+  margin-left: 30px;
+}
+
+.terminal .inputLine input {
+  flex: 0.97;
+  outline: none;
+  border: none;
+  font-family: monospace;
+  font-size: 15px;
+  background: #000;
+  color: #33ff33;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 0;
+}
+
+.title img{
+  display: flex;
+  width: 10%;
+}
+
+.terminal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 255, 0, 0.03),
+    rgba(0, 255, 0, 0.03) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+}
